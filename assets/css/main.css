@@ -1703,6 +1703,12 @@
 		font-weight: 100;
 	}
 
+	commons {
+		font-family: "Open Sans", sans-serif;
+		font-size: 1.0em;
+		font-weight: 100;
+	}
+
 	em, i {
 		font-style: italic;
 	}
@@ -2827,7 +2833,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.1;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
