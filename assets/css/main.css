@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /*
 	Forty by HTML5 UP
@@ -1695,6 +1695,12 @@
 	strong, b {
 		color: #ffffff;
 		font-weight: 600;
+	}
+
+	common {
+		font-family: "Open Sans", sans-serif;
+		font-size: 1.5em;
+		font-weight: 100;
 	}
 
 	em, i {
