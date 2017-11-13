@@ -1741,6 +1741,11 @@
 		font-size: 1.35em;
 	}
 
+	h3b {
+		font-size: 1.35em;
+		text-shadow: 2px 2px 15px #000000;
+	}
+
 	h4 {
 		font-size: 1.1em;
 	}
