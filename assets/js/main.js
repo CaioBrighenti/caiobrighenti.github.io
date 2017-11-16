@@ -89,7 +89,8 @@
 		return $(this);
 
 	};
-
+      
+    
 	$(function() {
 
 		var	$window = $(window),
