@@ -44,10 +44,11 @@ p {margin: 0 0 20px; line-height: 1.5;}
 
 .tab {margin: 0 auto; }
 /*.tab .content {background: #fff; color: #373737;}*/
-.tab .content > div {display: none; padding: 20px 25px 5px;}
+.tab .content > div {padding: 20px 25px 5px;display: none;
+left: -100px;}
 
 .tab input {visibility:hidden;}
-.tab label {display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;background: #21253d;}
+.tab label {border-radius: 0 0 8px 8px;display: inline-block; padding: 15px 25px; font-weight: 600; text-align: center;background: #21253d;}
 .tab label:hover {color: #fff; cursor: pointer;}
 .tab input:checked + label {background: #2a2f4a; color: #fff;}
 
@@ -56,9 +57,61 @@ p {margin: 0 0 20px; line-height: 1.5;}
 #tab3:checked ~ .content #content3,
 #tab4:checked ~ .content #content4{
     display: block;
+/*
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-name: slidein;
+*/
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 100%; 
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+@keyframes showNav {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* Tabs */
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+    width: 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #434867;
+    border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color: #5E6482;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius: 2px;
+}
+
 .inner-tabs{
     padding: 2em 3em 0.1em 3em ;
     border-style: solid;
